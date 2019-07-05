@@ -1,10 +1,10 @@
-html {
+html{
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: auto;
 }
 
-h3 {
+h3{
     color:#FFF;
     text-align: center;
     font-family: 'lato', sans-serif;
@@ -14,7 +14,7 @@ h3 {
     margin-top: -35px;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -24,58 +24,62 @@ h3 {
     margin-right:auto;
 }
 
-/*Removal of left and right margins for paddings*/
-.row{
-    margin: 0 -5px;
+*{
+    box-sizing: border-box;
 }
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
+  
+  /* Float four columns side by side */
 .column {
     float: left;
     width: 25%;
     padding: 0 10px;
 }
-
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+  /* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     padding-top: 10px;
     text-align: center;
     background-color: #f1f1f1;
 }
-
-.cardHeader{
-    text-align: center;
-    font-family: 'lato' , sans-serif;
-    letter-spacing: 2px;
-    margin-top: -5px;
-    text-decoration-line: underline;
+  
+ @media screen and (max-width: 700px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
 }
-
+  
+.cardHeaders{
+      text-align: center;
+      font-family: 'lato', sans-serif;
+      letter-spacing: 2px;
+      margin-top: -5px;
+      text-decoration-line:underline;
+}
+  
 .aboutMe{
-    text-indent: 22px;
-    text-align: center;
-    font-family: 'lato', sans-serif;
-    letter-spacing: 0px;
-    font-size: 14px;
-}
-
-.cardText{
+    text-indent:22px;
     text-align: left;
     font-family: 'lato', sans-serif;
     letter-spacing: 0px;
     font-size: 14px;
 }
-
-@media screen and (max-width: 700px){
-    .column{
-        width: 100px;
-        display: block;
-        margin-bottom: 20px;
-    }
+  
+.cardText{
+    text-align: left;
+    font-family: 'lato', sans-serif;
+    letter-spacing: 0px;
+    font-size: 14px;
 }
