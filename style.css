@@ -29,6 +29,12 @@ h3 {
     margin: 0 -5px;
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .column {
     float: left;
     width: 25%;
@@ -53,8 +59,23 @@ h3 {
 
 .aboutMe{
     text-indent: 22px;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    letter-spacing: 0px;
+    font-size: 14px;
+}
+
+.cardText{
     text-align: left;
     font-family: 'lato', sans-serif;
     letter-spacing: 0px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 700px){
+    .column{
+        width: 100px;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
