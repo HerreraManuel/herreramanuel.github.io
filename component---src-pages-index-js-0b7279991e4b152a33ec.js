@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{"I/Z2":function(e){e.exports=JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Manuel Herrera"}}}}')},RXBc:function(e,t,a){"use strict";a.r(t),a.d(t,"default",(function(){return u}));var n=a("q1tI"),r=a.n(n),i=a("I/Z2");function l(){var e=i.data;return r.a.createElement("div",{className:"header-main"},r.a.createElement("h1",null,e.site.siteMetadata.title))}function u(){return r.a.createElement("div",null,r.a.createElement(l,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-0b7279991e4b152a33ec.js.map
