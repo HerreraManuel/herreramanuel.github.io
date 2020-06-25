@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{Ofmp:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return o}));var r=e("q1tI"),u=e.n(r);function o(){return u.a.createElement("div",null,"Work")}}}]);
+//# sourceMappingURL=component---src-pages-work-js-e1c1cb29968954b6ba7b.js.map

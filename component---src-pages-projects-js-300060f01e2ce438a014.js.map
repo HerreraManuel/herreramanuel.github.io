@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/projects.js"],"names":["Projects"],"mappings":"6FAAA,wEAEe,SAASA,IACtB,OACA","file":"component---src-pages-projects-js-300060f01e2ce438a014.js","sourcesContent":["import React from \"react\"\n\nexport default function Projects() {\n  return (\n  <div>\n      Projects\n  </div>\n  )\n}\n"],"sourceRoot":""}
