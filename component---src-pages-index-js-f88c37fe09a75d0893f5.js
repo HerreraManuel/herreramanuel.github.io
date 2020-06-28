@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{RXBc:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return i}));var u=t("q1tI"),c=t.n(u);function i(){return c.a.createElement("div",null,"Testiny deployment")}}}]);
-//# sourceMappingURL=component---src-pages-index-js-f88c37fe09a75d0893f5.js.map
