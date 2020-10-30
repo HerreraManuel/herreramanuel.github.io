@@ -14,6 +14,18 @@
   border: 1px solid black;
 }
 
+.card{  
+  @include dimensions( 570px,  100px);
+   padding: 20px;
+   border-radius: 3px;
+   background-color: white;
+   box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ 
+
 $maincolor: #EF476F;
     html{height: 100%;}
     body{
@@ -27,50 +39,42 @@ $maincolor: #EF476F;
 
     .content{
       position: relative; 
+      
+    }
+    .outline{
+      @extend %flex;
+      flex-direction: row;  
+      position: relative;
+    
+      img{ 
+        margin-left: 15px;
+        border-radius: 120%;
+        width: 120px;
+        height: 120px;
+      }
+      .name{
+        padding: 0px 0px 0px 33px;
+        h1{ 
+          font-size: 3.1em;
+          line-height: 0;
+        }
+        h3{ font-size: 1.0em;
+            color: $maincolor;
+            font-style: italic;
+        }
+        p.info{
+          padding: 10px 0px;
+          color: #5A5A5A;
+          line-height: 1.0;
+          font-style: initial;
+        }  
+      }
     }
 
-.card{  
- @include dimensions( 570px,  100px);
-  padding: 20px;
-  border-radius: 3px;
-  background-color: white;
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
-  position: relative;
-  overflow: hidden;
-}
 
 
 
-.outline{
-  @extend %flex;
-  flex-direction: row;  
-  position: relative;
 
-  img{ 
-    margin-left: 15px;
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-  }
-
-  .name{
-    padding: 0px 0px 0px 33px;
-    h1{ 
-      font-size: 3.1em;
-      line-height: .1;
-    }
-    h3{ font-size: 1.0em;
-        color: $maincolor;
-        font-style: italic;
-    }
-    p.info{
-      padding: 10px 0px;
-      color: #5A5A5A;
-      line-height: 1.0;
-      font-style: initial;
-    }  
-  }
-}
 
 .icons {
   padding: 0rem;

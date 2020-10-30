@@ -3,13 +3,14 @@ import './stylized.scss'
 import self from '../../../static/self.png'
 import Typist from 'react-typist'
 
+
 const CardInfo = () => {
   return (
     <div className={'content'}>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
       <div className={'card'}>
         <div className={'outline'}>
-          <img src={self} alt="self"></img>
+          <img src={self} alt="self" width={'120px'} height={'120px'}></img>
           <div className={'name'}>
           <h1>
               <Typist cursor={{hideWhenDone: true}}
