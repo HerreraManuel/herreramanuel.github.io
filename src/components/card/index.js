@@ -1,6 +1,7 @@
 import React from 'react'
 import './stylized.scss'
 import self from '../../../static/self.png'
+import Typist from 'react-typist'
 
 const CardInfo = () => {
   return (
@@ -10,7 +11,15 @@ const CardInfo = () => {
         <div className={'outline'}>
           <img src={self} alt="self"></img>
           <div className={'name'}>
-            <h1>Manuel Herrera</h1>
+          <h1>
+              <Typist cursor={{hideWhenDone: true}}
+              blink={true}
+              hideWhenDone={5000}
+              avgTypingDelay={40}>
+                <Typist.Delay ms={1000}/>
+                  Manuel Herrera
+              </Typist>
+            </h1>
             <h3>Sacramento, CA</h3>
             <div className={'info'}>
               <p>
