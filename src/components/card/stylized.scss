@@ -12,7 +12,7 @@
   border: 1px solid black;
 }
 
-$maincolor: #fafafa;
+$maincolor: #da7777;
     html{height: 100%;}
 
     body{
@@ -42,7 +42,6 @@ $maincolor: #fafafa;
 .outline{
   @extend %flex;
   flex-direction: row;  
-  z-index: 2;
   position: relative;
   
   img{ 

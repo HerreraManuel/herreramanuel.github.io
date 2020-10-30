@@ -8,11 +8,12 @@ const CardInfo = () => {
         <div className={'outline'}>
           <img src=""></img>
           <div className={'name'}>
-           <h1>Manuel Herrera</h1> </div>
-           <h3>Test</h3>
-           <div className={'info'}>
-             <p>This is stuff about me</p>
-           </div>
+            <h1>Manuel Herrera</h1>
+            <h3>Programmer</h3>
+            <div className={'info'}>
+              <p>I like to make things</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
