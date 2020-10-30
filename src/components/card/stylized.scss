@@ -15,7 +15,7 @@
 }
 
 .card{  
-  @include dimensions( 570px,  100px);
+  @include dimensions( 600px,  80px);
    padding: 20px;
    border-radius: 3px;
    background-color: white;
@@ -36,7 +36,6 @@ $maincolor: #EF476F;
       box-sizing: border-box;
       background-color: #118AB2;
     }
-
     .content{
       position: relative; 
       
@@ -48,9 +47,9 @@ $maincolor: #EF476F;
     
       img{ 
         margin-left: 15px;
-        border-radius: 120%;
-        width: 120px;
-        height: 120px;
+        border-radius: 60%;
+        width: 160px;
+        height: 160px;
       }
       .name{
         padding: 0px 0px 0px 33px;
@@ -115,5 +114,84 @@ i {
 .Typist .Cursor {
   display: inline-block;
   font-size: 1em;
+}
 
+@media only screen and (max-width: 680px) {
+  .card {
+    display:grid;
+    width: auto;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+  }
+  .content{
+    display:flex;
+  }
+  .outline{
+    flex-direction: row;  
+    position: relative;
+    z-index: 2;
+  
+    img{ 
+      margin-left: 15px;
+      border-radius: 60%;
+      width: 160px;
+      height: 160px;
+    }
+    .name{
+      padding: 0px 0px 0px 33px;
+      h1{ 
+        font-size: 18px;
+        line-height: 0;
+        display:flex;
+      }
+      h3{ font-size: 1.0em;
+          color: $maincolor;
+          font-style: italic;
+      }
+      p.info{
+        padding: 10px 0px;
+        color: #5A5A5A;
+        line-height: 1.0;
+        font-style: initial;
+      }  
+    }
+  }
+
+  .icons {
+    padding: 0rem;
+    a {
+      color: rgb(7, 59, 76);
+      &:visited {
+        color: rgb(7, 59, 76);
+      }
+    }
+    .fab {
+      -webkit-transition: -webkit-transform .2s ease-in-out;
+      transition:         transform .2s ease-in-out;
+  
+      &:hover {
+      -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+      }
+  
+    }
+    .fas {
+      -webkit-transition: -webkit-transform .2s ease-in-out;
+      transition:         transform .2s ease-in-out;
+  
+      &:hover {
+      -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+      }
+  
+    }
+   
+  }
+  i {
+    text-align: center;
+    font-size: 3.0em;
+    padding: 1rem 0rem 0rem 1rem;
+  }
+  
 }
