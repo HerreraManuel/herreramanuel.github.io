@@ -14,8 +14,7 @@ const CardInfo = () => {
             <h3>Sacramento, CA</h3>
             <div className={'info'}>
               <p>
-                A first-generation college graduate looking to apply his knowledge in software development.
-                <br></br>
+                A college graduate who has experience working on software development, application security, and bash scripting.
                 <div className={'icons'}>
               <a href='https://github.com/HerreraManuel' alt="github"><i className="fab fa-github"></i></a>
               <a href='https://www.linkedin.com/in/herrera-manuel/' alt="linkedin"><i className="fab fa-linkedin"></i></a>

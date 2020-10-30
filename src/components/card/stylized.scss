@@ -5,6 +5,8 @@
   align-items: center; 
   justify-content: center;
 }
+%reset { margin: 0; padding: 0; }
+ 
 
 @mixin dimensions($width: null, $height: null) { 
   width: $width; 
@@ -12,9 +14,8 @@
   border: 1px solid black;
 }
 
-$maincolor: #da7777;
+$maincolor: #EF476F;
     html{height: 100%;}
-
     body{
       @extend %flex;
       font-family: 'Roboto', sans-serif;
@@ -23,12 +24,12 @@ $maincolor: #da7777;
       box-sizing: border-box;
     }
 
-.content{
-  position: relative; 
-}
+    .content{
+      position: relative; 
+    }
 
 .card{  
- @include dimensions( 550px,  100px);
+ @include dimensions( 570px,  100px);
   padding: 20px;
   border-radius: 3px;
   background-color: white;
@@ -43,17 +44,18 @@ $maincolor: #da7777;
   @extend %flex;
   flex-direction: row;  
   position: relative;
-  
+
   img{ 
+    margin-left: 15px;
     border-radius: 100%;
     width: 150px;
     height: 150px;
   }
 
   .name{
-    padding: 0px 10px;
+    padding: 0px 0px 0px 33px;
     h1{ 
-      font-size: 1.8em;
+      font-size: 3.1em;
       line-height: .1;
     }
     h3{ font-size: 1.0em;
@@ -72,9 +74,9 @@ $maincolor: #da7777;
 .icons {
   padding: 0rem;
   a {
-    color: rgb(197, 7, 7);
+    color: rgb(7, 59, 76);
     &:visited {
-      color: rgb(25, 154, 177);
+      color: rgb(7, 59, 76);
     }
   }
   .fab {
@@ -101,6 +103,7 @@ $maincolor: #da7777;
 }
 i {
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 3.0em;
   padding: 1rem 1.2rem 0rem 1rem;
 }
+
