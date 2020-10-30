@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/work.js"],"names":["Work"],"mappings":"2FAAA,wEAEe,SAASA,IACtB,OACA","file":"component---src-pages-work-js-3c127c312a90de3a6b32.js","sourcesContent":["import React from \"react\"\n\nexport default function Work() {\n  return (\n  <div>\n  Work\n  </div>\n  )\n}\n"],"sourceRoot":""}
