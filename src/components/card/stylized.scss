@@ -28,7 +28,7 @@ $maincolor: #da7777;
 }
 
 .card{  
- @include dimensions( 500px,  100px);
+ @include dimensions( 550px,  100px);
   padding: 20px;
   border-radius: 3px;
   background-color: white;
@@ -67,4 +67,40 @@ $maincolor: #da7777;
       font-style: initial;
     }  
   }
+}
+
+.icons {
+  padding: 0rem;
+  a {
+    color: rgb(197, 7, 7);
+    &:visited {
+      color: rgb(25, 154, 177);
+    }
+  }
+  .fab {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:         transform .2s ease-in-out;
+
+    &:hover {
+    -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+    }
+
+  }
+  .fas {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:         transform .2s ease-in-out;
+
+    &:hover {
+    -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+    }
+
+  }
+ 
+}
+i {
+  text-align: center;
+  font-size: 2.6rem;
+  padding: 1rem 1.2rem 0rem 1rem;
 }
