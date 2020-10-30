@@ -6,5 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [`gatsby-plugin-styled-components`,
+  {
+    resolve: `gatsby-plugin-material-ui`,
+    options: {
+      stylesProvider: {
+        injectFirst: true,
+      },
+    },
+  },
+  'gatsby-plugin-sass'
+],
 }
