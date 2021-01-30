@@ -1,26 +1,41 @@
-$font-stack: Roboto
-$primary-color: #333
-
+$font-stack: Ubuntu, sans-serif
+$primary-color: #dddddd
 
 body
     margin: 0
     display: flex
     min-height: 100vh
     flex-direction: column
-    font-family: 'Ubuntu', 'Roboto', sans-serif
+    font-family: 'Ubuntu', sans-serif  
+    background-color: #dddddd 
 
 #intro
-    font-size: 1.5rem
+    font-size: 1.6rem
     align-items: center
     letter-spacing: -1px
-
+    color: #eeeeee
+    text-align: center
+ 
 #name
-    font-size: 5rem
+    font-size: 6rem
     text-align: center
     line-height: 110%
-    margin: 1.52rem 0 0.912rem 0
+    margin: 10rem 0 0 0
     justify-conent: center
+    color: #fbd46d 
     
-@media (max-width: 1200px)
+
+#icons
+    padding: 0rem
+    margin: 0 0 1rem 0
+    font-size: 3rem
+
+a
+    color: #eeeeee 
+    &:visited
+        color: #eeeeee 
+
+
+@media (max-width: 100px)
   h1
     font-size: calc(1.525rem + 3.3vw)
