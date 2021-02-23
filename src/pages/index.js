@@ -361,7 +361,7 @@ sales and use tax laws.<br />
             FirstMatey | Home Server
           </Typography>
           <Typography variant="body2" color="#dddddd" component="p">
-            Made a home server from a repuprosed XPS 8700 to host various docker containers, media, bots, and personal documents.
+            Made a home server from a repurposed XPS 8700 to host various docker containers, media, bots, and personal documents.
           </Typography>
         </CardContent>
       </CardActionArea>
