@@ -75,6 +75,7 @@ const IndexPage = () => {
   const [open, setOpen] = React.useState(false);
   const [openJob2, setOpenJob2] = React.useState(false);
   const [openJob3, setOpenJob3] = React.useState(false);
+  const [openJob4, setOpenJob4] = React.useState(false);
   const [openProject1, setOpenProject1] = React.useState(false);
   const [openProject2, setOpenProject2] = React.useState(false);
   const [openProject3, setOpenProject3] = React.useState(false);
@@ -98,6 +99,10 @@ const IndexPage = () => {
     setOpenJob3(true);
   };
 
+  const handleClickOpenJob4 = () => {
+    setOpenJob4(true);
+  };
+
   const handleClickProject1 = () => {
     setOpenProject1(true);
   };
@@ -110,11 +115,13 @@ const IndexPage = () => {
     setOpenProject3(true);
   };
   
+  
   const handleClose = () => {
     setOpenEmail(false);
     setOpen(false);
     setOpenJob2(false);
     setOpenJob3(false);
+    setOpenJob4(false);
     setOpenProject1(false);
     setOpenProject2(false);
     setOpenProject3(false);
@@ -156,9 +163,6 @@ const IndexPage = () => {
           <a href='https://github.com/HerreraManuel' alt="github"><i className="fab fa-github"></i></a>
           </Box>
           <Box p={2} component="span">
-          <a href='https://twitter.com/man__whale' alt="twitter"><i className="fab fa-twitter"></i></a>
-          </Box>
-          <Box p={2} component="span">
           <a href='mailto:mherrera.jm@gmail.com' onClick={handleClickOpenEmail} alt="email"><i className="fas fa-envelope"></i></a>
           <Dialog
         fullWidth={fullWidth}
@@ -191,12 +195,66 @@ mherrera.jm@gmail.com
       <Grid item>
       <Card className={classes.work}  variant="outlined">
       <CardActionArea>
-        <CardMedia >
-        <img src={sac} alt="DHCS logo" className={classes.bkwork}/>
-        </CardMedia>
+        <CardContent>
+          <Typography gutterBottom variant="h6" component="h2">
+            Application Automation Programmer II
+          </Typography>
+          <Typography gutterBottom variant="h6" component="h6">
+            Deerpoint Group, Inc.
+          </Typography>
+          <Typography variant="body2" color="#dddddd" component="p">
+            June 2021 - Present
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions className={classes.contentLinks}>
+        <Button size="small" className={classes.buttonAdjust} variant="outlined"
+        onClick={handleClickOpenJob4}>
+        More Info
+        </Button>
+
+        <Dialog
+        fullWidth={fullWidth}
+        maxWidth={maxWidth}
+        open={openJob4}
+        onClose={handleClose}
+        aria-labelledby="test"
+      >
+        <DialogTitle id="test">Deerpoint Group, Inc.</DialogTitle>
+        <DialogContent>
+          <DialogContentText color="222831">
+          • Wrote a Python script to send data to 100+ PLCs that assists a precision feeding system of chemicals
+to decrease site visits, automate the process of manually entering data, and lower fuel consumption.
+<br />
+• Compressed raw images stored in our database by 80% and delivered logs to our department’s
+Microsoft Teams using Python and Pillow
+<br />
+• Enabled point-in-time recovery and wrote backup scripts for multiple PostgreSQL production
+databases.
+<br />
+• Designed and programmed a dashboard monitoring tool with Python and Ignition for R&D and launch of 
+Deerpoint’s new fertilizer feeding system for data analytics.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions >
+          <Button onClick={handleClose}  variant="contained" color="secondary">
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog> 
+
+      </CardActions>
+    </Card>
+    </Grid>
+      <Grid item>
+      <Card className={classes.work}  variant="outlined">
+      <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h6" component="h2">
             Database Administrator Intern
+          </Typography>
+          <Typography gutterBottom variant="h6"  component="h6">
+          Sacramento County Department of Technology
           </Typography>
           <Typography variant="body2" color="#dddddd" component="p">
             Oct. 2019 - Oct. 2020
@@ -245,13 +303,12 @@ Attended monthly meetings with shareholders to report the status of the project.
       <Grid item>
       <Card className={classes.work}  variant="outlined">
       <CardActionArea>
-        <CardMedia
-        >
-        <img src={DHCS} alt="DHCS logo" className={classes.bkwork}/>
-        </CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h6" component="h2">
             Web Accessibility Intern
+          </Typography>
+          <Typography gutterBottom variant="h6"  component="h6">
+          California Department of Health Care Services
           </Typography>
           <Typography variant="body2" color="dddddd" component="p">
             June 2019 - Aug. 2019
@@ -291,14 +348,12 @@ standards using Equidox to review PDF content. <br />
     <Grid item>
       <Card className={classes.work}  variant="outlined">
       <CardActionArea>
-        <CardMedia
-                className={classes.web}
-        >
-        <img src={CDTFA} alt="CDTFA logo" className={classes.bkwork}/>
-        </CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h6" component="h3">
             Staff Services Analyst Intern
+          </Typography>
+          <Typography gutterBottom variant="h6"  component="h6">
+          California Department of Tax and Fee Administration
           </Typography>
           <Typography variant="body2" color="dddddd" component="p">
             Feb. 2019 - June 2019
