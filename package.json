@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
-    "gatsby": "^2.26.1",
+    "gatsby": "^5.5.0",
     "gatsby-plugin-sass": "^3.1.0",
     "gatsby-theme-material-ui": "^1.0.13",
     "particles.js": "^2.0.0",
